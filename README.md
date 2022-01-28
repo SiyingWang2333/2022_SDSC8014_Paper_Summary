@@ -17,23 +17,33 @@ The paper summary of Online Learning and Optimization by Enming Liang
 ![](2022-01-28-14-35-06.png)
 2. Greedy Projection
 ![](2022-01-28-14-36-07.png)
-3. performance
+3. Lazy Projection
+![](2022-01-28-14-53-54.png)
+4. Performance
    1. online performance
 ![](2022-01-28-14-40-03.png)
-   2. offline benchmark
+   2. offline static benchmark
 ![](2022-01-28-14-40-14.png)
    1. regret 
 ![](2022-01-28-14-40-33.png)
+   1. dynamic regret (dynamic offline strategy with path constraints)
+![](2022-01-28-14-48-44.png)
 
-
-
-#### Algorithm
-1. Theorem 1
+#### Algorithm guarantee
+1. regret bound
 ![](2022-01-28-14-41-50.png)
-
+2. dynamic regret bound
+![](2022-01-28-14-51-10.png)
+3. regret bound for lazy projection
+![](2022-01-28-14-55-16.png)
 
 
 #### Application
-
+1. Repeated Game
+    1. action: player A and environment Y
+    2. history: sequence of joint actions
+![](2022-01-28-14-58-00.png)
+    3. utility: 
+![](2022-01-28-14-58-36.png)
 #### 
 
