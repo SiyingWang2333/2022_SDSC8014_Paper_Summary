@@ -1,14 +1,13 @@
-# 2022_SDSC8014_Paper_Summary
+
 The paper summary of Online Learning and Optimization by Enming Liang
 
-- [2022_SDSC8014_Paper_Summary](#2022_sdsc8014_paper_summary)
-    - [Online Convex Programming and Generalized Infinitesimal Gradient Ascent](#online-convex-programming-and-generalized-infinitesimal-gradient-ascent)
-      - [Main idea](#main-idea)
-      - [Definitions](#definitions)
-      - [Algorithm guarantee](#algorithm-guarantee)
-      - [Connection with Repeated Game](#connection-with-repeated-game)
-      - [Connection with Online Linear Programming](#connection-with-online-linear-programming)
-      - [Conclusion remarks](#conclusion-remarks)
+- [Online Convex Programming and Generalized Infinitesimal Gradient Ascent](#online-convex-programming-and-generalized-infinitesimal-gradient-ascent)
+  - [Main idea](#main-idea)
+  - [Definitions](#definitions)
+  - [Algorithm guarantee](#algorithm-guarantee)
+  - [Connection with Repeated Game](#connection-with-repeated-game)
+  - [Connection with Online Linear Programming](#connection-with-online-linear-programming)
+  - [Conclusion remarks](#conclusion-remarks)
 
 
 
