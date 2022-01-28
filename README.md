@@ -13,11 +13,25 @@ The paper summary of Online Learning and Optimization by Enming Liang
    2. repeated games
  
 #### Definitions
-1. 
+1. Online convex programming
+![](2022-01-28-14-35-06.png)
+2. Greedy Projection
+![](2022-01-28-14-36-07.png)
+3. performance
+   1. online performance
+![](2022-01-28-14-40-03.png)
+   2. offline benchmark
+![](2022-01-28-14-40-14.png)
+   1. regret 
+![](2022-01-28-14-40-33.png)
 
 
 
 #### Algorithm
+1. Theorem 1
+![](2022-01-28-14-41-50.png)
+
+
 
 #### Application
 
