@@ -45,5 +45,8 @@ The paper summary of Online Learning and Optimization by Enming Liang
 ![](2022-01-28-14-58-00.png)
     3. utility: 
 ![](2022-01-28-14-58-36.png)
+    4. regret of not playing action a
+![](2022-01-28-15-00-25.png)
+    5. behavior: mapping from history to action probability
 #### 
 
