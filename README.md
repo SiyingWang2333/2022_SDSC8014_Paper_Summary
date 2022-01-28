@@ -38,7 +38,7 @@ The paper summary of Online Learning and Optimization by Enming Liang
 ![](2022-01-28-14-55-16.png)
 
 
-#### Application
+#### Connection with Repeated Game
 1. Repeated Game
     1. action: player A and environment Y
     2. history: sequence of joint actions
@@ -48,5 +48,24 @@ The paper summary of Online Learning and Optimization by Enming Liang
     4. regret of not playing action a
 ![](2022-01-28-15-00-25.png)
     5. behavior: mapping from history to action probability
-#### 
+![](2022-01-28-15-03-38.png)
+    6. oblivious deterministic environment: 
+       1. plays the same sequence of actions regardless of the actions of the player
+2. Repeated Game as an Online Linear Program
+![](2022-01-28-15-17-07.png)
+   1. greedy projection:
+![](2022-01-28-15-26-11.png)
+   1. Lazy Projection and Fictitious Play
+![](2022-01-28-15-31-32.png)
+
+#### Connection with Online Linear Programming
+1. Expert problem
+   ![](2022-01-28-15-32-40.png)
+2. EA as online linear programming
+![](2022-01-28-15-49-56.png)
+3. online linear as online convex
+
+
+#### Conclusion remarks
+1. 
 
