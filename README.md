@@ -102,36 +102,36 @@ The paper summary of Online Learning and Optimization by Enming Liang
 
 #### Definitions
 1. Regularized stochastic learning
-   ![](2022-02-16-14-14-19.png)
+   ![](pic/2022-02-16-14-14-19.png)
    1. $f(w,z)$ is convex function for each $z$ (Least-squares, hinge)
    2. $\Psi(w)$ is convex function (L-2, L-1)
 2. Regret for online learning 
-   ![](2022-02-16-14-27-54.png)
+   ![](pic/2022-02-16-14-27-54.png)
 #### Alogrithm
 1. Input strongly convex function $h(w)$ with minimizer as $\Psi$
-   ![](2022-02-16-14-40-14.png)
+   ![](pic/2022-02-16-14-40-14.png)
 2. Running average of sub-gradient:
-   ![](2022-02-16-14-42-05.png)
+   ![](pic/2022-02-16-14-42-05.png)
 3. next $w$ (close form for simple function)
-  ![](2022-02-16-14-42-48.png)
+  ![](pic/2022-02-16-14-42-48.png)
 #### Performance guarantee
 1. analysis framework
-   1. FTRL: ![](2022-02-16-15-31-59.png)
-   2. RDA: ![](2022-02-16-15-32-28.png)
+   1. FTRL: ![](pic/2022-02-16-15-31-59.png)
+   2. RDA: ![](pic/2022-02-16-15-32-28.png)
    3. similar idea, different parameters
 
 #### Connection with FOBOS 
 1. l1-regularization
    1. auxiliary convex function: 
-![](2022-02-16-15-43-04.png)
+![](pic/2022-02-16-15-43-04.png)
    2. RDA: 
-![](2022-02-16-15-43-34.png)
+![](pic/2022-02-16-15-43-34.png)
       1. truncating threshold: 
-![](2022-02-16-15-45-13.png)
+![](pic/2022-02-16-15-45-13.png)
 1. FOBOS
-   ![](2022-02-16-15-36-11.png)
+   ![](pic/2022-02-16-15-36-11.png)
    2. truncating threshold:
-![](2022-02-16-15-52-43.png)
+![](pic/2022-02-16-15-52-43.png)
 3. the RDA method can generate much more sparse solutions.
 
 #### Conclusion remarks
