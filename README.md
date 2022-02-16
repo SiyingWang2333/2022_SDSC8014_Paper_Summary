@@ -8,6 +8,13 @@ The paper summary of Online Learning and Optimization by Enming Liang
   - [Connection with Repeated Game](#connection-with-repeated-game)
   - [Connection with Online Linear Programming](#connection-with-online-linear-programming)
   - [Conclusion remarks](#conclusion-remarks)
+- [Dual Averaging Method for Regularized Stochastic Learning and Online Optimization](#dual-averaging-method-for-regularized-stochastic-learning-and-online-optimization)
+  - [Main idea](#main-idea-1)
+  - [Definitions](#definitions-1)
+  - [Alogrithm](#alogrithm)
+  - [Performance guarantee](#performance-guarantee)
+  - [Connection with FOBOS](#connection-with-fobos)
+  - [Conclusion remarks](#conclusion-remarks-1)
 
 
 
@@ -82,3 +89,52 @@ The paper summary of Online Learning and Optimization by Enming Liang
    1. prove universal consistency
 3. Converting expert algorithm -> online linear programming -> online convex programming
 
+
+
+
+### Dual Averaging Method for Regularized Stochastic Learning and Online Optimization
+#### Main idea
+1. online algorithm for SGD with regularizer
+2. running average of all past subgradients (RDA)
+   1. uses an auxiliary strongly convex function
+   2. $O(\sqrt{t})$ regret, $O(\ln(t))$ for strongly convex regularizer
+   3. explicit regularization effect at each iteration 
+
+#### Definitions
+1. Regularized stochastic learning
+   ![](2022-02-16-14-14-19.png)
+   1. $f(w,z)$ is convex function for each $z$ (Least-squares, hinge)
+   2. $\Psi(w)$ is convex function (L-2, L-1)
+2. Regret for online learning 
+   ![](2022-02-16-14-27-54.png)
+#### Alogrithm
+1. Input strongly convex function $h(w)$ with minimizer as $\Psi$
+   ![](2022-02-16-14-40-14.png)
+2. Running average of sub-gradient:
+   ![](2022-02-16-14-42-05.png)
+3. next $w$ (close form for simple function)
+  ![](2022-02-16-14-42-48.png)
+#### Performance guarantee
+1. analysis framework
+   1. FTRL: ![](2022-02-16-15-31-59.png)
+   2. RDA: ![](2022-02-16-15-32-28.png)
+   3. similar idea, different parameters
+
+#### Connection with FOBOS 
+1. l1-regularization
+   1. auxiliary convex function: 
+![](2022-02-16-15-43-04.png)
+   2. RDA: 
+![](2022-02-16-15-43-34.png)
+      1. truncating threshold: 
+![](2022-02-16-15-45-13.png)
+1. FOBOS
+   ![](2022-02-16-15-36-11.png)
+   2. truncating threshold:
+![](2022-02-16-15-52-43.png)
+3. the RDA method can generate much more sparse solutions.
+
+#### Conclusion remarks
+1. Using online algorithm to analyse SGD with regularizer (FTRL)
+   1. design auxiliary function when $\Psi$ is not convex
+2. practical in l1-regularization task
