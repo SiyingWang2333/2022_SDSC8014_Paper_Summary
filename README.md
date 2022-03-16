@@ -173,21 +173,21 @@ The paper summary of Online Learning and Optimization by Enming Liang
 1. Gaussian Processes 
    1. modeling reward function
    2. updating posterior distribution 
-   ![](2022-03-16-14-50-05.png)
+   ![](pic/2022-03-16-14-50-05.png)
 2. Mutual information
    1. Mutual information for new observation
       1. Used to evaluate the information gain conditioned on existing distribution
       2. monotonicity
       3. submodularity
-![](2022-03-16-15-18-35.png)
+![](pic/2022-03-16-15-18-35.png)
    2. Conditional mutual information of new observation given last observation
-![](2022-03-16-15-25-20.png)
+![](pic/2022-03-16-15-25-20.png)
    3. Maximum mutual information based approach
-![](2022-03-16-15-27-22.png)
+![](pic/2022-03-16-15-27-22.png)
 
 #### Algorithm
 1. GP-UCB for Strictly Sequential Selection
-![](2022-03-16-15-28-17.png)
+![](pic/2022-03-16-15-28-17.png)
    1. sublinear regret
    2. Batch selection
       1. Naive approach: update posterior with new feedback
@@ -196,13 +196,13 @@ The paper summary of Online Learning and Optimization by Enming Liang
    1. update mean need experiment results
    2. update variance does not nedd
    3. decision rule: use all information so far
-   ![](2022-03-16-15-39-09.png)
+   ![](pic/2022-03-16-15-39-09.png)
       1. encourage exploration with newest variance information
       2. disadvantage: exploratory redundancy since confidence interval is proportional to variance
    1. To avoid overconfidence
-![](2022-03-16-15-44-35.png)
+![](pic/2022-03-16-15-44-35.png)
       1. bounded variance ratio -> then choose interval width to adjust it
- ![](2022-03-16-16-16-16.png)
+ ![](pic/2022-03-16-16-16-16.png)
    2. Initialization of variance
 
 
